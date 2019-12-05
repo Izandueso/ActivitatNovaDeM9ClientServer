@@ -16,9 +16,9 @@ public class ServidorTCP2 {
 		int numusuaris = teclado.nextInt();
 		
 		for (int i = 0; i < numusuaris; i++) {
-		   	 System.out.println("Esperant connexió... ");
+		   	 System.out.println("Esperant connexió... " + i);
 			 clientConnectat = servidor.accept();
-			 System.out.println("Client connectat... ");
+			 System.out.println("Client connectat... " + i);
 		}
 		
 		PrintWriter fsortida = null;
